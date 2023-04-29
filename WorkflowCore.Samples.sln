@@ -4,8 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowCore.Samples.GettingStarted", "WorkflowCore.Samples.GettingStarted\WorkflowCore.Samples.GettingStarted.csproj", "{1A236C68-5369-4029-AF9E-E4D9C6D2305E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F} = {C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.PassingData", "WorkflowCore.Samples.PassingData\WorkflowCore.Samples.PassingData.csproj", "{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowCore.Samples.PassingData", "WorkflowCore.Samples.PassingData\WorkflowCore.Samples.PassingData.csproj", "{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F} = {C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.DependencyInjection", "WorkflowCore.Samples.DependencyInjection\WorkflowCore.Samples.DependencyInjection.csproj", "{C941B354-3DA0-45C8-AA32-FFE108929F94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F} = {C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.SharedDependency", "WorkflowCore.Samples.SharedDependency\WorkflowCore.Samples.SharedDependency.csproj", "{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +34,14 @@ Global
 		{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C941B354-3DA0-45C8-AA32-FFE108929F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C941B354-3DA0-45C8-AA32-FFE108929F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C941B354-3DA0-45C8-AA32-FFE108929F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C941B354-3DA0-45C8-AA32-FFE108929F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00451D9-C8C2-4099-BEE1-2D94BCB1A58F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

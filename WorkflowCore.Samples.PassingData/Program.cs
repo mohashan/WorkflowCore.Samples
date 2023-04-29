@@ -1,17 +1,12 @@
-﻿using WorkflowCore.Samples.PassingData.Workflows;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using WorkflowCore.Interface;
+using WorkflowCore.Samples.PassingData.Workflows;
 using WorkflowCore.Samples.PassingData.Workflows.AddNumbers;
+using WorkflowCore.Samples.SharedDependency;
 
-var serviceProvider = new ServiceCollection()
-    .AddLogging()
-    .AddWorkflow()
-    .BuildServiceProvider();
+var sharedLibs = new WorkflowSharedLibrary();
 
-var host = serviceProvider.GetService<IWorkflowHost>();
-
-if (host == null)
-    throw new Exception("Host not initialized");
+var host = sharedLibs.Host();
 
 host.RegisterWorkflow<AddNumbersWorkflow, MyDataClass>();
 
