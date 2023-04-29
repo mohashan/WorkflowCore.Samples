@@ -17,7 +17,6 @@ host.RegisterWorkflow<AddNumbersWorkflow, MyDataClass>();
 
 host.Start();
 
-host.StartWorkflow("HelloWorld");
 host.StartWorkflow("AddNumbers");
 
 Console.ReadLine();
