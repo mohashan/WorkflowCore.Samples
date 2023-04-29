@@ -1,7 +1,7 @@
-﻿using WorkflowCore.Samples.GettingStarted.Workflows;
+﻿using WorkflowCore.Samples.PassingData.Workflows;
 using Microsoft.Extensions.DependencyInjection;
 using WorkflowCore.Interface;
-using WorkflowCore.Samples.GettingStarted.Workflows.AddNumbers;
+using WorkflowCore.Samples.PassingData.Workflows.AddNumbers;
 
 var serviceProvider = new ServiceCollection()
     .AddLogging()
@@ -10,11 +10,10 @@ var serviceProvider = new ServiceCollection()
 
 var host = serviceProvider.GetService<IWorkflowHost>();
 
-if(host == null )
+if (host == null)
     throw new Exception("Host not initialized");
 
-host.RegisterWorkflow<HelloWorldWorkflow>();
-host.RegisterWorkflow<AddNumbersWorkflow,MyDataClass>();
+host.RegisterWorkflow<AddNumbersWorkflow, MyDataClass>();
 
 host.Start();
 

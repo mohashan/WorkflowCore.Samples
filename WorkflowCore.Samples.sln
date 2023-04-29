@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.GettingStarted", "WorkflowCore.Samples.GettingStarted\WorkflowCore.Samples.GettingStarted.csproj", "{1A236C68-5369-4029-AF9E-E4D9C6D2305E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowCore.Samples.GettingStarted", "WorkflowCore.Samples.GettingStarted\WorkflowCore.Samples.GettingStarted.csproj", "{1A236C68-5369-4029-AF9E-E4D9C6D2305E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.PassingData", "WorkflowCore.Samples.PassingData\WorkflowCore.Samples.PassingData.csproj", "{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1A236C68-5369-4029-AF9E-E4D9C6D2305E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A236C68-5369-4029-AF9E-E4D9C6D2305E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A236C68-5369-4029-AF9E-E4D9C6D2305E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E21E5F8-3C81-4C64-A932-F6CF8D362CD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
