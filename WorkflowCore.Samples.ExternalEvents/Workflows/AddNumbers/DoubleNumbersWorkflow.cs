@@ -28,6 +28,7 @@ namespace WorkflowCore.Samples.ExternalEvents.Workflows
                     .Output(data => data.Answer, step => step.Output)
                 .Then<PublishMessageStep>()
                     .Input(step => step.Message, data => $"{data.Value} * 2 ==> The Answer is {data.Answer.ToString()}")
+                    .Input(step => step.Period, data => TimeSpan.FromSeconds(5))
                 .Then(context => Console.WriteLine("workflow complete"));
 
         }

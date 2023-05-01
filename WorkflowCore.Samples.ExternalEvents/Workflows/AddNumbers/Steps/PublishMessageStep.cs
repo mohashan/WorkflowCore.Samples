@@ -10,9 +10,12 @@ namespace WorkflowCore.Samples.ExternalEvents.Workflows.AddNumbers.Steps
 {
     public class PublishMessageStep : StepBody
     {
+        public TimeSpan Period { get; set; } = TimeSpan.FromSeconds(10);
         public string Message { get; set; }
         public override ExecutionResult Run(IStepExecutionContext context)
         {
+            ExecutionResult.Sleep(Period, new object());
+
             Console.WriteLine($"Here In Last step. Message : {Message}");
             return ExecutionResult.Next();
         }
