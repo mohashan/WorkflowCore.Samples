@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.Shared
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.ExternalEvents", "WorkflowCore.Samples.ExternalEvents\WorkflowCore.Samples.ExternalEvents.csproj", "{1F05A5FF-7EC1-49AB-A231-34DD24DE6674}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowCore.Samples.MultipleOutcomes", "WorkflowCore.Samples.MultipleOutcomes\WorkflowCore.Samples.MultipleOutcomes.csproj", "{81F62A8B-62BE-4DA8-9D30-F38BF7BCA1FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{1F05A5FF-7EC1-49AB-A231-34DD24DE6674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F05A5FF-7EC1-49AB-A231-34DD24DE6674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F05A5FF-7EC1-49AB-A231-34DD24DE6674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F62A8B-62BE-4DA8-9D30-F38BF7BCA1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F62A8B-62BE-4DA8-9D30-F38BF7BCA1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F62A8B-62BE-4DA8-9D30-F38BF7BCA1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F62A8B-62BE-4DA8-9D30-F38BF7BCA1FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
