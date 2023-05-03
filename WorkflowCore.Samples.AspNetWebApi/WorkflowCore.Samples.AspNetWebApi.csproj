@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="WorkflowCore.Persistence.EntityFramework" Version="3.8.2" />
+    <PackageReference Include="WorkflowCore.Persistence.SqlServer" Version="3.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WorkflowCore.Samples.GettingStarted\WorkflowCore.Samples.GettingStarted.csproj" />
+    <ProjectReference Include="..\WorkflowCore.Samples.SharedDependency\WorkflowCore.Samples.SharedDependency.csproj" />
+  </ItemGroup>
+
+</Project>
